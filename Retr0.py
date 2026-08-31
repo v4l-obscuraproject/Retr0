@@ -6,10 +6,6 @@ Static, text-only terminal menu for cybersecurity awareness training.
 
 Created by: 5h9q_ (developer) and rosp_1 (publishing) on discord.
 Licensed under the MIT License (see LICENSE file)
-
-Every selection prints a simulated initialization failure followed by an 
-educational message or routing link highlighting the risks of running 
-untrusted "hacking tools" pulled from Discord servers or random forums.
 """
 
 import sys
@@ -19,7 +15,7 @@ SUPPORT_URL = "https://github.com/v4l-obscuraproject/Retr0"
 
 # Structure: (Code, Icon, Title, Sub-description, Category)
 MENU_ITEMS = [
-    ("01", "▨", "DDoS Flood", "Packet flood against a target host.", "NETWORK"),
+    ("01", "▨", "DDoS Flood", "Packet launching flood against a target host.", "NETWORK"),
     ("02", "⛁", "Password Cracker", "Dictionary attack against a captured hash.", "CREDENTIALS"),
     ("03", "◍", "WiFi Deauther", "Deauth flood + handshake capture against an AP.", "WIRELESS"),
     ("04", "◉", "Webcam Access", "Remote camera stream via reverse shell.", "SURVEILLANCE"),
@@ -50,7 +46,7 @@ def print_menu():
 | |) / _ \ '_| / /   / -_) _/ _ \ ' \
 |___/\___/_| |_\_\_|_\___\__\___/_||_|
     """)
-    print("      5h9q_  (developer)         
+    print("      5h9q_  (developer)        
     
     print("\n" + "=" * 65)
     print("                 OBSCURA AWARENESS INTERFACE")
@@ -77,7 +73,7 @@ def print_error_and_lesson():
 
 
 def main():
-    # Corrected extraction logic to pull proper unique IDs
+    # FIXED LOOKUP MAPPING
     valid_codes = {item[0] for item in MENU_ITEMS}
     
     while True:

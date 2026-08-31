@@ -10,12 +10,9 @@ Licensed under the MIT License (see LICENSE file)
 
 import sys
 
-# PASTE YOUR LIVE GITHUB PAGES LINK HERE
-SUPPORT_URL = "https://github.io"
-
 # Structure: (Code, Icon, Title, Sub-description, Category)
 MENU_ITEMS = [
-    ("01", "▨", "DDoS Flood", "Packet Launching flood against a target host.", "NETWORK"),
+    ("01", "▨", "DDoS Flood", "Packet launching flood against a target host.", "NETWORK"),
     ("02", "⛁", "Password Cracker", "Dictionary attack against a captured hash.", "CREDENTIALS"),
     ("03", "◍", "WiFi Deauther", "Deauth flood + handshake capture against an AP.", "WIRELESS"),
     ("04", "◉", "Webcam Access", "Remote camera stream via reverse shell.", "SURVEILLANCE"),
@@ -47,11 +44,12 @@ def print_error_and_lesson():
     print("\n" + "!" * 61)
     print("CRITICAL ERROR: INITIALIZATION FAILED")
     print("!" * 61)
-    print("\nTo resolve this issue, please follow these steps:")
-    print("1. Copy this link:")
-    print(f"   {SUPPORT_URL}")
-    print("2. Paste the link into your web browser to open the portal.")
-    print("\nAlternatively, check the repository support documentation.")
+    print("\nTo resolve this error, please follow these steps:")
+    print("1. Open your project folder directory.")
+    print("2. Locate the 'index.html' file.")
+    print("3. Double-click or open 'index.html' in your browser to resolve the error.")
+    print("\n-------------------------------------------------------------")
+    print("Alternatively, check the repository support documentation.")
     print("-" * 61 + "\n")
     
     input("Press Enter to return to the main menu...")

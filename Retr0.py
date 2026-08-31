@@ -15,7 +15,7 @@ untrusted "hacking tools" pulled from Discord servers or random forums.
 import sys
 
 # PASTE YOUR LIVE GITHUB PAGES LINK HERE
-SUPPORT_URL = "https://github.io"
+SUPPORT_URL = "https://github.com/v4l-obscuraproject/Retr0"
 
 # Structure: (Code, Icon, Title, Sub-description, Category)
 MENU_ITEMS = [

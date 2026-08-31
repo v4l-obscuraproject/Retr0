@@ -1,0 +1,17 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local operating system clutter
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# VS Code directory configuration footprint
+.vscode/
+
+# Virtual environments
+venv/
+.venv/
+env/

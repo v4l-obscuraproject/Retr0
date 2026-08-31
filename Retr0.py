@@ -4,7 +4,7 @@ Obscura Awareness Simulator
 ----------------------------
 Static, text-only terminal menu for cybersecurity awareness training.
 
-Created by: 5h9q_ (developer)  on discord.
+Created by: 5h9q_ (developer) on discord.
 Licensed under the MIT License (see LICENSE file)
 """
 
@@ -15,7 +15,7 @@ SUPPORT_URL = "https://github.com/v4l-obscuraproject/Retr0"
 
 # Structure: (Code, Icon, Title, Sub-description, Category)
 MENU_ITEMS = [
-    ("01", "▨", "DDoS Flood", "Packet launching flood against a target host.", "NETWORK"),
+    ("01", "▨", "DDoS Flood", "Packet Launching flood against a target host.", "NETWORK"),
     ("02", "⛁", "Password Cracker", "Dictionary attack against a captured hash.", "CREDENTIALS"),
     ("03", "◍", "WiFi Deauther", "Deauth flood + handshake capture against an AP.", "WIRELESS"),
     ("04", "◉", "Webcam Access", "Remote camera stream via reverse shell.", "SURVEILLANCE"),
@@ -27,48 +27,37 @@ MENU_ITEMS = [
 
 
 def print_menu():
-    # Big OBSCURA Art Banner
-    print("\n  ____  ____   _____  _____ _    _ _____          ")
-    print(" / __ \|  _ \ / ____|/ ____| |  | |  __ \   /\    ")
-    print("| |  | | |_) | (___ | |    | |  | | |__) | /  \   ")
-    print("| |  | |  _ < \___ \| |    | |  | |  _  / / /\ \  ")
-    print("| |__| | |_) |____) | |____| |__| | | \\ \\/ ____ \\ ")
-    print(" \____/|____/|_____/ \_____|\____/|_|  \_\/    \_\ ")
+    # Cleaned OBSCURA Text Headers
+    print("\n=============================================================")
+    print("                       O B S C U R A                         ")
+    print("=============================================================")
+    print("  [+] Core System: Retr0 Interface Activated")
+    print("  [+] Engineering Credits:")
+    print("      >> 5h9q_ (Developer)")
+    print("=============================================================")
     
-    # Smaller Retr0 Sub-branding block
-    print("\n ___          _   ___ ")
-    print("|   \ ___ _ _| |_| _ \___ __ ___ _ _")
-    print("| |) / _ \ '_| / /   / -_) _/ _ \ ' \\")
-    print("|___/\___/_| |_\_\_|_\___\__\___/_||_|")
-    print("\n      5h9q_  (developer)    
-    
-    print("\n" + "=" * 65)
-    print("                 OBSCURA AWARENESS INTERFACE")
-    print("=" * 65)
     for code, icon, name, desc, cat in MENU_ITEMS:
         print(f"\n{code}. {icon} {name}")
         print(f"    {desc}")
         print(f"    [{cat}]")
-    print("\n" + "=" * 65)
-
+    print("\n" + "=" * 61)
 
 
 def print_error_and_lesson():
-    print("\n" + "!" * 65)
+    print("\n" + "!" * 61)
     print("CRITICAL ERROR: INITIALIZATION FAILED")
-    print("!" * 65)
+    print("!" * 61)
     print("\nTo resolve this issue, please follow these steps:")
     print("1. Copy this link:")
     print(f"   {SUPPORT_URL}")
     print("2. Paste the link into your web browser to open the portal.")
     print("\nAlternatively, check the repository support documentation.")
-    print("-" * 65 + "\n")
+    print("-" * 61 + "\n")
     
     input("Press Enter to return to the main menu...")
 
 
 def main():
-    # FIXED LOOKUP MAPPING
     valid_codes = {item[0] for item in MENU_ITEMS}
     
     while True:

@@ -40,7 +40,7 @@ def print_menu():
     print("|   \ ___ _ _| |_| _ \___ __ ___ _ _")
     print("| |) / _ \ '_| / /   / -_) _/ _ \ ' \\")
     print("|___/\___/_| |_\_\_|_\___\__\___/_||_|")
-    print("\n      5h9q_  (developer)         rosp_1  (publishing)")
+    print("\n      5h9q_  (developer)    
     
     print("\n" + "=" * 65)
     print("                 OBSCURA AWARENESS INTERFACE")

@@ -4,7 +4,7 @@ Obscura Awareness Simulator
 ----------------------------
 Static, text-only terminal menu for cybersecurity awareness training.
 
-Created by: 5h9q_ (developer) and rosp_1 (publishing) on discord.
+Created by: 5h9q_ (developer)  on discord.
 Licensed under the MIT License (see LICENSE file)
 """
 
@@ -46,7 +46,7 @@ def print_menu():
 | |) / _ \ '_| / /   / -_) _/ _ \ ' \
 |___/\___/_| |_\_\_|_\___\__\___/_||_|
     """)
-    print("      5h9q_  (developer)        
+    print("      5h9q_  (developer) on discord       
     
     print("\n" + "=" * 65)
     print("                 OBSCURA AWARENESS INTERFACE")
